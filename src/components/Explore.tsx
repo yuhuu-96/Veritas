@@ -93,10 +93,13 @@ export default function Explore({ onLoadProfile }: ExploreProps) {
       <div className="explore-feature-bar">
         <div className="explore-feature-item">
           <div className="explore-feature-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-              <ellipse cx="12" cy="5" rx="9" ry="3"/>
-              <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
-              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+            {/* Network/globe icon - professional */}
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="12" cy="12" r="9.5"/>
+              <path d="M12 2.5c0 0-4 3.5-4 9.5s4 9.5 4 9.5"/>
+              <path d="M12 2.5c0 0 4 3.5 4 9.5s-4 9.5-4 9.5"/>
+              <line x1="2.5" y1="9" x2="21.5" y2="9"/>
+              <line x1="2.5" y1="15" x2="21.5" y2="15"/>
             </svg>
           </div>
           <div>
@@ -107,8 +110,12 @@ export default function Explore({ onLoadProfile }: ExploreProps) {
         <div className="explore-feature-divider" />
         <div className="explore-feature-item">
           <div className="explore-feature-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-              <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="10.5" cy="10.5" r="6.5"/>
+              <line x1="15.5" y1="15.5" x2="21" y2="21"/>
+              <line x1="7" y1="9" x2="14" y2="9" strokeWidth="1.2"/>
+              <line x1="8" y1="12" x2="13" y2="12" strokeWidth="1.2"/>
+              <line x1="9" y1="15" x2="12" y2="15" strokeWidth="1.2"/>
             </svg>
           </div>
           <div>
@@ -119,8 +126,14 @@ export default function Explore({ onLoadProfile }: ExploreProps) {
         <div className="explore-feature-divider" />
         <div className="explore-feature-item">
           <div className="explore-feature-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+            {/* Upload/publish to chain icon */}
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round">
+              <rect x="3" y="14" width="18" height="7" rx="1.5"/>
+              <path d="M12 3v9"/>
+              <polyline points="8 7 12 3 16 7"/>
+              <line x1="7" y1="17.5" x2="7" y2="17.5" strokeWidth="2.5" strokeLinecap="round"/>
+              <line x1="12" y1="17.5" x2="12" y2="17.5" strokeWidth="2.5" strokeLinecap="round"/>
+              <line x1="17" y1="17.5" x2="17" y2="17.5" strokeWidth="2.5" strokeLinecap="round"/>
             </svg>
           </div>
           <div>
