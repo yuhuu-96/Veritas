@@ -59,6 +59,44 @@ export default function Navbar() {
         </ul>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+          <a
+            href="https://docs.shelby.xyz/tools/wallets/petra-setup#apt-faucet"
+            target="_blank"
+            rel="noreferrer"
+            style={{
+              fontFamily: 'var(--font-mono)',
+              fontSize: 10,
+              letterSpacing: '0.15em',
+              color: 'var(--gold)',
+              textDecoration: 'none',
+              border: '1px solid rgba(200,151,58,0.3)',
+              padding: '6px 12px',
+              transition: 'all 0.2s',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '6px'
+            }}
+            onMouseEnter={e => {
+              e.currentTarget.style.background = 'rgba(200,151,58,0.1)';
+              e.currentTarget.style.borderColor = 'var(--gold)';
+            }}
+            onMouseLeave={e => {
+              e.currentTarget.style.background = 'transparent';
+              e.currentTarget.style.borderColor = 'rgba(200,151,58,0.3)';
+            }}
+          >
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M12 2v6" />
+              <path d="M12 18v4" />
+              <path d="M4.93 10.93l4.24 4.24" />
+              <path d="M14.83 14.83l4.24 4.24" />
+              <path d="M2 12h6" />
+              <path d="M18 12h4" />
+              <path d="M4.93 4.93l4.24 4.24" />
+              <path d="M14.83 4.83l4.24 4.24" />
+            </svg>
+            FAUCET
+          </a>
           {connected && account ? (
             <div className="wallet-indicator" style={{ display: 'flex' }} onClick={handleDisconnect} title="Click to disconnect">
               <div className="wallet-dot" />
