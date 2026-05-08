@@ -37,10 +37,10 @@ export default function Hero() {
         <div className="hero-rule" />
         <p className="hero-eyebrow">Decentralized · Immutable · Verifiable</p>
         <h1 className="hero-title"><em>Veri</em>tas</h1>
-        <p className="hero-latin">from Latin — "truth"</p>
+        <p className="hero-latin">from Latin - "truth"</p>
         <p className="hero-tagline">
           In a world of fake credentials, Veritas makes your career story provably real.
-          Your resume, immutably stored on Shelby — verified on Aptos.
+          Your resume, immutably stored on Shelby - verified on Aptos.
         </p>
         <div className="hero-actions">
           <button className="btn-primary" onClick={() => scrollTo('app')}>

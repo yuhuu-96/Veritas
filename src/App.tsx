@@ -32,7 +32,7 @@ function AppContent() {
       resume.updateIdentity('profileImage' as Parameters<typeof resume.updateIdentity>[0], profile.profileImage);
     }
     document.getElementById('app')?.scrollIntoView({ behavior: 'smooth' });
-    showToast('Profile loaded — now customize it!', 'info');
+    showToast('Profile loaded - now customize it!', 'info');
   };
 
   return (

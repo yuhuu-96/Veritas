@@ -34,7 +34,7 @@ export default function Navbar() {
   const addrStr = account?.address ? account.address.toString() : '';
   const shortAddr = addrStr ? addrStr.slice(0, 6) + '...' + addrStr.slice(-4) : '';
 
-  // Prioritise Petra — put it first if present
+  // Prioritise Petra - put it first if present
   const sortedWallets = [...(wallets ?? [])].sort((a) => {
     const name = (a as unknown as { name: string }).name?.toLowerCase() ?? '';
     return name.includes('petra') ? -1 : 0;
@@ -82,7 +82,7 @@ export default function Navbar() {
           <div className="modal" style={{ maxWidth: 420 }}>
             <div className="modal-header">
               <span className="modal-title">Connect Wallet</span>
-              <button className="modal-close" onClick={() => setShowWalletModal(false)}>×</button>
+              <button className="modal-close" onClick={() => setShowWalletModal(false)}>�-</button>
             </div>
             <div className="modal-body">
               <p style={{ fontFamily: 'var(--font-mono)', fontSize: 10, color: 'rgba(245,240,232,0.4)', letterSpacing: '0.12em', marginBottom: 20, lineHeight: 1.6 }}>

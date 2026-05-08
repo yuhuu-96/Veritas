@@ -13,22 +13,22 @@ const steps = [
   },
   {
     num: '03', Icon: IconChain, title: 'Publish On-Chain',
-    desc: "Your resume JSON is uploaded to Shelby's decentralized hot storage. A cryptographic commitment is written to the Aptos blockchain — immutably linking you to your truth.",
+    desc: "Your resume JSON is uploaded to Shelby's decentralized hot storage. A cryptographic commitment is written to the Aptos blockchain - immutably linking you to your truth.",
     tech: 'Via: Shelby SDK · Aptos Mainnet',
   },
   {
     num: '04', Icon: IconHash, title: 'Get Your Blob ID',
-    desc: 'Receive a unique Shelby Blob ID — a permanent, shareable identifier for your resume. Share this ID with employers or anyone who needs to verify your credentials.',
+    desc: 'Receive a unique Shelby Blob ID - a permanent, shareable identifier for your resume. Share this ID with employers or anyone who needs to verify your credentials.',
     tech: 'Output: Shelby Blob Hash · Aptos Tx Hash',
   },
   {
     num: '05', Icon: IconShield, title: 'Anyone Can Verify',
-    desc: 'Employers enter your Blob ID into the Verify tab. The data is retrieved from Shelby and cross-checked against the Aptos blockchain commitment — trustlessly.',
+    desc: 'Employers enter your Blob ID into the Verify tab. The data is retrieved from Shelby and cross-checked against the Aptos blockchain commitment - trustlessly.',
     tech: 'Via: Shelby RPC · Aptos Indexer',
   },
   {
     num: '06', Icon: IconInfinity, title: 'Permanent & Yours',
-    desc: 'No central authority can alter or delete your verified credentials. Your professional truth lives on a decentralized network — censorship-resistant and permanently accessible.',
+    desc: 'No central authority can alter or delete your verified credentials. Your professional truth lives on a decentralized network - censorship-resistant and permanently accessible.',
     tech: 'Network: Shelby Devnet → Mainnet · Aptos L1',
   },
 ];
@@ -36,7 +36,7 @@ const steps = [
 export default function HowItWorks() {
   return (
     <section id="how">
-      <p className="section-eyebrow">/ 01 — Protocol</p>
+      <p className="section-eyebrow">/ 01 - Protocol</p>
       <h2 className="section-title">How Veritas Works</h2>
       <div className="steps-grid">
         {steps.slice(0, 3).map(({ num, Icon, title, desc, tech }) => (

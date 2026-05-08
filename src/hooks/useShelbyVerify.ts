@@ -54,7 +54,7 @@ export function useShelbyVerify(): UseShelbyVerifyReturn {
 
       // Verify schema
       if (resumeData.schema !== 'veritas/resume/v1') {
-        throw new Error('Invalid resume schema — this blob is not a Veritas resume.');
+        throw new Error('Invalid resume schema - this blob is not a Veritas resume.');
       }
 
       const verifyResult: VerifyResult = {

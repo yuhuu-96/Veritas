@@ -278,7 +278,17 @@ footer { border-top: 1px solid var(--border); padding: 40px 48px; }
   .preview-panel { position: static; }
   .explore-grid { grid-template-columns: 1fr 1fr; }
   .stats-bar { flex-wrap: wrap; gap: 32px; padding: 20px 24px; }
+  
+  /* Fix Explore Feature Bar on smaller screens */
+  .explore-feature-bar { grid-template-columns: 1fr; }
+  .explore-feature-divider { width: 100%; height: 1px; }
+  
+  /* Fix Footer on smaller screens */
   footer { padding: 32px 24px; }
+  .footer-grid { grid-template-columns: 1fr; text-align: center; gap: 32px; }
+  .footer-brand { align-items: center; }
+  .footer-network { justify-content: center; }
+  
   .verify-meta { grid-template-columns: 1fr; }
 }
 @media (max-width: 600px) {

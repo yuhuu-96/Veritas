@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="footer-grid">
-        {/* LEFT — Brand + Builder social links */}
+        {/* LEFT - Brand + Builder social links */}
         <div className="footer-brand">
           <div className="footer-logo">VERITAS</div>
           <div style={{ fontFamily: 'var(--font-mono)', fontSize: 9, letterSpacing: '0.18em', color: 'rgba(245,240,232,0.25)', marginBottom: 12 }}>
@@ -43,7 +43,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* CENTER — Links */}
+        {/* CENTER - Links */}
         <div className="footer-links">
           <a href="https://docs.shelby.xyz" target="_blank" rel="noreferrer" className="footer-link">Shelby Docs</a>
           <a href="https://aptos.dev" target="_blank" rel="noreferrer" className="footer-link">Aptos Dev</a>
@@ -51,9 +51,9 @@ export default function Footer() {
           <a href="https://github.com/yuhuu-96" target="_blank" rel="noreferrer" className="footer-link">GitHub</a>
         </div>
 
-        {/* RIGHT — Network info */}
+        {/* RIGHT - Network info */}
         <div className="footer-network">
-          <span>● Shelby Protocol</span>
+          <span>�-� Shelby Protocol</span>
           <span>·</span>
           <span>Aptos Network</span>
           <span>·</span>

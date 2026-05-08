@@ -18,7 +18,7 @@ export default function Verify() {
 
   return (
     <section id="verify">
-      <p className="section-eyebrow">/ 03 — Verify</p>
+      <p className="section-eyebrow">/ 03 - Verify</p>
       <h2 className="section-title">Verify a Credential</h2>
       <p style={{ color: 'rgba(245,240,232,0.5)', fontSize: 17, maxWidth: 520, marginBottom: 48 }}>
         Enter a Shelby Blob ID to trustlessly verify any Veritas resume on the decentralised network.

@@ -32,7 +32,7 @@ function AvatarFallback({ name }: { name: string }) {
 export default function Explore({ onLoadProfile }: ExploreProps) {
   return (
     <section id="explore">
-      <p className="section-eyebrow">/ 04 — Directory</p>
+      <p className="section-eyebrow">/ 04 - Directory</p>
       <h2 className="section-title">Public Resume Directory</h2>
       <p style={{ fontFamily: 'var(--font-mono)', fontSize: 11, color: 'rgba(245,240,232,0.35)', letterSpacing: '0.08em', lineHeight: 1.7, maxWidth: 520, marginBottom: 48 }}>
         Browse publicly verified resumes on the Veritas network. All profiles are on-chain and independently verifiable by anyone.
@@ -72,7 +72,7 @@ export default function Explore({ onLoadProfile }: ExploreProps) {
                 {p.skills.map((s, j) => <span className="mini-tag" key={j}>{s}</span>)}
               </div>
 
-              {/* Bottom — View button */}
+              {/* Bottom - View button */}
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 20 }}>
                 <div style={{ fontFamily: 'var(--font-mono)', fontSize: 8, letterSpacing: '0.14em', color: 'rgba(245,240,232,0.18)' }}>
                   SHELBY PROTOCOL

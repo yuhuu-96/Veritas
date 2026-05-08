@@ -128,7 +128,7 @@ export default function ResumeBuilder(props: ResumeBuilderProps) {
     identity: {
       ...jsonData.identity,
       profileImage: jsonData.identity.profileImage
-        ? `[base64 image — ${Math.round((jsonData.identity.profileImage.length * 3) / 4 / 1024)}KB stored on-chain]`
+        ? `[base64 image - ${Math.round((jsonData.identity.profileImage.length * 3) / 4 / 1024)}KB stored on-chain]`
         : undefined,
     },
   };
@@ -146,11 +146,11 @@ export default function ResumeBuilder(props: ResumeBuilderProps) {
 
   return (
     <section id="app">
-      <p className="section-eyebrow">/ 02 — Builder</p>
+      <p className="section-eyebrow">/ 02 - Builder</p>
       <h2 className="section-title">Build Your On-Chain Resume</h2>
 
       <div className="app-layout">
-        {/* LEFT: Form — overflow hidden prevents base64 from collapsing grid */}
+        {/* LEFT: Form - overflow hidden prevents base64 from collapsing grid */}
         <div style={{ minWidth: 0, overflow: 'hidden' }}>
           {/* Identity Panel */}
           <div className="app-panel" style={{ marginBottom: 20 }}>
@@ -159,7 +159,7 @@ export default function ResumeBuilder(props: ResumeBuilderProps) {
               <span className="panel-badge">Personal Info</span>
             </div>
             <div className="panel-body">
-              {/* Photo Upload — compact inline strip */}
+              {/* Photo Upload - compact inline strip */}
               <div className="photo-upload-strip">
                 <div className="photo-frame-wrap">
                   <div className="photo-frame">
@@ -193,7 +193,7 @@ export default function ResumeBuilder(props: ResumeBuilderProps) {
                   {identity.profileImage && (
                     <button onClick={() => updateIdentity('profileImage' as keyof typeof identity, '')}
                       style={{ marginTop: 6, fontFamily: 'var(--font-mono)', fontSize: 9, color: '#ef4444', background: 'none', border: 'none', cursor: 'pointer', letterSpacing: '0.1em', padding: 0 }}>
-                      × Remove photo
+                      �- Remove photo
                     </button>
                   )}
                 </div>
@@ -257,7 +257,7 @@ export default function ResumeBuilder(props: ResumeBuilderProps) {
                   {experience.map((e, i) => (
                     <div className="entry-card" key={i}>
                       <div className="entry-card-title">{e.position || 'Untitled'}</div>
-                      <div className="entry-card-sub">{e.company || '—'} · {e.start} {e.end ? `– ${e.end}` : ''}</div>
+                      <div className="entry-card-sub">{e.company || '-'} · {e.start} {e.end ? `– ${e.end}` : ''}</div>
                       <div className="entry-card-actions">
                         <button className="icon-btn" onClick={() => openModal('experience', i)} title="Edit">✎</button>
                         <button className="icon-btn danger" onClick={() => props.removeExperience(i)} title="Remove">✕</button>
@@ -273,7 +273,7 @@ export default function ResumeBuilder(props: ResumeBuilderProps) {
                   {education.map((e, i) => (
                     <div className="entry-card" key={i}>
                       <div className="entry-card-title">{e.degree || 'Untitled'}</div>
-                      <div className="entry-card-sub">{e.institution || '—'} · {e.start} {e.end ? `– ${e.end}` : ''}</div>
+                      <div className="entry-card-sub">{e.institution || '-'} · {e.start} {e.end ? `– ${e.end}` : ''}</div>
                       <div className="entry-card-actions">
                         <button className="icon-btn" onClick={() => openModal('education', i)} title="Edit">✎</button>
                         <button className="icon-btn danger" onClick={() => props.removeEducation(i)} title="Remove">✕</button>
@@ -288,7 +288,7 @@ export default function ResumeBuilder(props: ResumeBuilderProps) {
                 <div>
                   <div className="skills-container">
                     {skills.map((s, i) => (
-                      <span className="skill-tag" key={i}>{s}<span className="remove" onClick={() => props.removeSkill(i)}>×</span></span>
+                      <span className="skill-tag" key={i}>{s}<span className="remove" onClick={() => props.removeSkill(i)}>�-</span></span>
                     ))}
                   </div>
                   <div style={{ display: 'flex', gap: 8, marginTop: 8 }}>
@@ -356,7 +356,7 @@ export default function ResumeBuilder(props: ResumeBuilderProps) {
                       const isActive = step === key;
                       return (
                         <div key={i} className={`tx-step ${isActive ? 'active' : ''} ${isDone ? 'done' : ''}`}>
-                          <div className="tx-step-icon">{isDone ? '✓' : isActive ? '↻' : '◌'}</div>
+                          <div className="tx-step-icon">{isDone ? '✓' : isActive ? '↻' : '�-�'}</div>
                           <span>{label}</span>
                         </div>
                       );
@@ -478,7 +478,7 @@ export default function ResumeBuilder(props: ResumeBuilderProps) {
           <div className="modal">
             <div className="modal-header">
               <span className="modal-title">{editIdx !== null ? 'Edit' : '+ Add'} {modalType === 'experience' ? 'Work Experience' : 'Education'}</span>
-              <button className="modal-close" onClick={() => setModalOpen(false)}>×</button>
+              <button className="modal-close" onClick={() => setModalOpen(false)}>�-</button>
             </div>
             <div className="modal-body">
               {modalType === 'experience' ? (
